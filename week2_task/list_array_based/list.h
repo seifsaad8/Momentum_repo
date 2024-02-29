@@ -19,10 +19,10 @@ int ListEmpty(List *pl);
 int ListFull(List *pl);
 int ListSize(List *pl);
 void DestroyList(List *pl);
-void InsertList(List *pl, ListEntry e,int p);
-void DeleteList(List *pl, ListEntry *pe,int p);
-void ListRetrieve(List *pl, ListEntry *pe,int p);
-void ListReplace(List *pl, ListEntry e,int p);
+void InsertList(List *pl,ListEntry e,int p);
+void DeleteList(List *pl,ListEntry *pe,int p);
+void ListRetrieve(List *pl,ListEntry *pe,int p);
+void ListReplace(List *pl,ListEntry e,int p);
 
 
 
