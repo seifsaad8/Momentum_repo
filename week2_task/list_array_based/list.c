@@ -1,6 +1,4 @@
-
 #include "GeneralList.h"
-
 
 void ListInit(List *pl)
 {
@@ -27,7 +25,7 @@ void DestroyList(List *pl)
     pl->Size = 0;
 }
 
-void InsertList(List *pl, ListEntry e,int p)
+void InsertList(List *pl,ListEntry e,int p)
 {
     for (int i = pl->Size; i <= p; i--)
     {
@@ -36,7 +34,7 @@ void InsertList(List *pl, ListEntry e,int p)
     pl->entry[p] = e;
     pl->Size++;
 }
-void DeleteList(List *pl, ListEntry *pe,int p)
+void DeleteList(List *pl,ListEntry *pe,int p)
 {
     *pe = pl->entry[p];
     for (int i = p+1; i <= pl->Size-1; i++)
@@ -46,12 +44,12 @@ void DeleteList(List *pl, ListEntry *pe,int p)
     pl->Size--;
 }
 
-void ListRetrieve(List *pl, ListEntry *pe,int p)
+void ListRetrieve(List *pl,ListEntry *pe,int p)
 {
     *pe = pl->entry[p];
 }
 
-void ListReplace(List *pl, ListEntry e,int p)
+void ListReplace(List *pl,ListEntry e,int p)
 {
     pl->entry[p] = e;
 }
