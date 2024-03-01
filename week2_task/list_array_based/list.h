@@ -14,7 +14,7 @@ typedef struct{
 
 
 
-void ListInit(List *pl);
+void ListInitial(List *pl);
 int ListEmpty(List *pl);
 int ListFull(List *pl);
 int ListSize(List *pl);
