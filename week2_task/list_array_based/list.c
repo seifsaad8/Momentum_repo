@@ -1,6 +1,6 @@
 #include "GeneralList.h"
 
-void ListInit(List *pl)
+void ListInitial(List *pl)
 {
     pl->Size = 0;
 }
